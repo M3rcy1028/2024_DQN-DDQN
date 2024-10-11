@@ -38,7 +38,7 @@ $$target\ value(y_t)=r_t + \gamma * max_{a'}Q_{target}(s_{t+1}, a'; {\theta}^-)$
 ## 3. DDQN (Double DQN)
 **DQN에서 action value를 과대평가(overestimation)하는 문제 발생**
 
-**> 행동 선택과 행통 평가를 다른 네트워크에서 수행하여 해결**
+**> 행동 선택과 행동 평가를 다른 네트워크에서 수행하여 해결**
 1. Main network : 다음 상태($s_{t+1}$)에서 Q-value를 최대화할 수 있는 행동 $\hat{a}$ 선택
 2. Target network : 다음 상태($s_{t+1}$)에서 행동 $\hat{a}$에 대한 평가
 
