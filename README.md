@@ -16,6 +16,11 @@ $$target\ value(y_t)=r_t + \gamma * max_{a'}Q(s_{t+1}, a'; \theta)$$
 
 ![2013_dqn_result](https://github.com/M3rcy1028/2024_DQN-DDQN/blob/main/dqn(2013)_result/dqn13.gif)
 
+<p align="center">
+  <img src="https://github.com/M3rcy1028/2024_DQN-DDQN/blob/main/dqn(2013)_result/plot_loss.png" align="center" width="49%">
+  <img src="https://github.com/M3rcy1028/2024_DQN-DDQN/blob/main/dqn(2013)_result/plot_rewards.png" align="center" width="49%">
+</p>
+
 ## 2. 2015 DQN
 **Target network를 사용하여 움직이는 target에 대한 학습 불안정성 해결 (이중네트워크)**
 1. Target value와 Action value를 구분하여 기준값과 결과값이 동시에 움직이지 않는다.
@@ -24,6 +29,11 @@ $$target\ value(y_t)=r_t + \gamma * max_{a'}Q(s_{t+1}, a'; \theta)$$
 $$target\ value(y_t)=r_t + \gamma * max_{a'}Q_{target}(s_{t+1}, a'; {\theta}^-)$$
 
 ![2015_dqn_result](https://github.com/M3rcy1028/2024_DQN-DDQN/blob/main/dqn(2015)_result/dqn(2015)_perfect.gif)
+
+<p align="center">
+  <img src="https://github.com/M3rcy1028/2024_DQN-DDQN/blob/main/dqn(2015)_result/plot_loss.png" align="center" width="49%">
+  <img src="https://github.com/M3rcy1028/2024_DQN-DDQN/blob/main/dqn(2015)_result/plot_rewards.png" align="center" width="49%">
+</p>
 
 ## 3. DDQN (Double DQN)
 **DQN에서 action value를 과대평가(overestimation)하는 문제 발생**
@@ -36,6 +46,12 @@ $$\hat{a}=max_{a'}Q_{main}(s_{t+1}, a'; \theta)$$
 $$target\ value(y_t)=r_t + \gamma * Q_{target}(s_{t+1}, \hat{a}; {\theta}^-)$$
 
 ![ddqn_result](https://github.com/M3rcy1028/2024_DQN-DDQN/blob/main/ddqn_result/ddqn_perfect.gif)
+$(maxreward=2000)$
+
+<p align="center">
+  <img src="https://github.com/M3rcy1028/2024_DQN-DDQN/blob/main/ddqn_result/plot_loss.png" align="center" width="49%">
+  <img src="https://github.com/M3rcy1028/2024_DQN-DDQN/blob/main/ddqn_result/plot_rewards.png" align="center" width="49%">
+</p>
 
 ### Reference
 - https://github.com/jordanlei/deep-reinforcement-learning-cartpole/tree/master
